@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="changer.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Google Search Language Changer</h1>
+    </header>
+    <main>
+      <div class="interface">
+        <p>Web Interface Language:</p>
+        <div class="button-container">
+          <button class="english active" data-type="interface" data-language="english">English</button>
+          <button class="turkish" data-type="interface" data-language="turkish">Türkçe</button>
+        </div>
+        <button data-type="reset-interface">Reset</button>
+      </div>
+      <div class="specified-language">
+        <p>Pages In Specified Language:</p>
+        <button class="english" data-type="specified-language" data-language="english">English</button>
+        <button class="turkish" data-type="specified-language" data-language="turkish">Türkçe</button>
+        <button data-type="reset-specified-language">Reset</button>
+      </div>
+    </main>
+    <script src="changer.js"></script>
+  </body>
+</html>

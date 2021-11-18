@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+header {
+  display: flex;
+  background-color: #7f0082;
+  color: #fff;
+  padding: 12px 40px;
+}
+
+header h1 {
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+main {
+  padding: 8px;
+}
+
+main div {
+  margin-bottom: 8px;
+}
+
+main p,
+main button {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+main p {
+  display: inline;
+}
+
+main button {
+  background: none;
+  border: none;
+}
+
+main .button-container {
+  /* display: inline;
+  border: #7f0082 solid 1px;
+  text-align: center;
+  margin: 0; */
+  display: inline-block;
+  border: 1px solid #7f0082;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+main button.active {
+  background: #ffffff;
+  border: 3px solid #aa5dab;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
