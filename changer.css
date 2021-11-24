@@ -3,31 +3,24 @@
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
 }
 
 header {
-  display: flex;
   background-color: #7f0082;
   color: #fff;
   padding: 12px 40px;
 }
 
 header h1 {
-  position: relative;
+  font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  text-align: right;
 }
 
-main {
-  padding: 8px;
-}
-
-main div {
-  margin-bottom: 8px;
-}
+/* Trying new things*/
 
 main p,
 main button {
@@ -39,28 +32,50 @@ main button {
 }
 
 main p {
-  display: inline;
+  color: #7f0082;
 }
 
-main button {
-  background: none;
-  border: none;
+main .wrapper {
+  max-width: 360px;
+  width: 100%;
+  float: right;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 10px;
+}
+
+main .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .flex-container > div {
+  display: flex;
+}
+
+main .flex-container > div:first-child {
+  margin-bottom: 16px;
+}
+
+main .flex-container > div > * {
+  width: 50%;
+}
+
+main .flex-container > div .content-title {
+  text-align: right;
+  line-height: 21.7px;
+}
+
+main .flex-container-2 {
+  display: flex;
 }
 
 main .button-container {
-  /* display: inline;
-  border: #7f0082 solid 1px;
-  text-align: center;
-  margin: 0; */
-  display: inline-block;
-  border: 1px solid #7f0082;
-  box-sizing: border-box;
-  border-radius: 4px;
+  margin-left: 22px;
 }
 
-main button.active {
-  background: #ffffff;
-  border: 3px solid #aa5dab;
-  box-sizing: border-box;
-  border-radius: 4px;
+main .flex-container-2 > .restart {
+  line-height: 21.7px;
+  margin-left: 20px;
+  color: #7f0082;
 }

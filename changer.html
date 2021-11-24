@@ -3,25 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="changer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <h1>Google Search Language Changer</h1>
     </header>
     <main>
-      <div class="interface">
-        <p>Web Interface Language:</p>
-        <div class="button-container">
-          <button class="english active" data-type="interface" data-language="english">English</button>
-          <button class="turkish" data-type="interface" data-language="turkish">Türkçe</button>
+      <div class="wrapper">
+        <div class="flex-container">
+          <div class="interface">
+            <p class="content-title">Web Interface Language:</p>
+            <div class="flex-container-2">
+              <div class="button-container">
+                <button
+                  class="english active"
+                  data-type="interface"
+                  data-language="english"
+                >
+                  English
+                </button>
+                <button
+                  class="turkish"
+                  data-type="interface"
+                  data-language="turkish"
+                >
+                  Türkçe
+                </button>
+              </div>
+              <i class="fa fa-refresh restart">
+                <!-- <button data-type="reset-specified-language"></button> -->
+              </i>
+            </div>
+          </div>
+          <div class="specified-language">
+            <p class="content-title">Pages In Specified Language:</p>
+            <div class="flex-container-2">
+              <div class="button-container">
+                <button
+                  class="english active"
+                  data-type="specified-language"
+                  data-language="english"
+                >
+                  English
+                </button>
+                <button
+                  class="turkish"
+                  data-type="specified-language"
+                  data-language="turkish"
+                >
+                  Türkçe
+                </button>
+              </div>
+              <i class="fa fa-refresh restart">
+                <!-- <button data-type="reset-specified-language"></button> -->
+              </i>
+            </div>
+          </div>
         </div>
-        <button data-type="reset-interface">Reset</button>
-      </div>
-      <div class="specified-language">
-        <p>Pages In Specified Language:</p>
-        <button class="english" data-type="specified-language" data-language="english">English</button>
-        <button class="turkish" data-type="specified-language" data-language="turkish">Türkçe</button>
-        <button data-type="reset-specified-language">Reset</button>
       </div>
     </main>
     <script src="changer.js"></script>
