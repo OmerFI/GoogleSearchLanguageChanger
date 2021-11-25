@@ -17,7 +17,7 @@ header h1 {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  text-align: right;
+  text-align: left;
 }
 
 /* Trying new things*/
@@ -38,7 +38,7 @@ main p {
 main .wrapper {
   max-width: 360px;
   width: 100%;
-  float: right;
+  float: left;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-right: 10px;
@@ -63,19 +63,44 @@ main .flex-container > div > * {
 
 main .flex-container > div .content-title {
   text-align: right;
-  line-height: 21.7px;
+  line-height: 23.7px;
 }
 
 main .flex-container-2 {
   display: flex;
 }
 
-main .button-container {
-  margin-left: 22px;
+main .flex-container-2 .restart {
+  color: #7f0082;
+  line-height: 23.7px;
+  /* margin-left: 20px; */
+  margin-right: 2px;
+  cursor: pointer;
 }
 
-main .flex-container-2 > .restart {
-  line-height: 21.7px;
-  margin-left: 20px;
-  color: #7f0082;
+main .button-container {
+  margin-left: 22px;
+  margin-right: 20px;
+  /* border: 2px solid #7f0082; */
+  /* if 1, then set line-height of .restart to 21.7, if 2 set it to 23.7*/
+  /* border-radius: 4px; */
+}
+
+main .button-container button {
+  background: none;
+  border: 2px solid #aa5dab;
+  border-radius: 14px;
+  padding: 1px 9px;
+  line-height: 18.5px;
+  cursor: pointer;
+}
+
+main .button-container button:hover {
+  box-shadow: 0 3px 3px rgba(170, 93, 171, 0.3);
+}
+
+main .button-container button.active {
+  cursor: default;
+  background: rgba(170, 93, 171, 1);
+  color: #fff;
 }
