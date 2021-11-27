@@ -17,10 +17,27 @@ const getActiveTab = () => {
 let main = document.querySelector("main");
 if (main) {
   //#region Add event listeners
+  let languageButtons = document.querySelectorAll(".button-container > button");
   main.addEventListener("click", (e) => {
     if (e.target.nodeName === "BUTTON") {
       type = e.target.dataset.type;
       language = e.target.dataset.language;
+
+      Array.from(languageButtons).forEach((languageButton) => {
+        switch (languageButton.dataset.type) {
+          case type:
+            if (language === languageButton.dataset.language) {
+              languageButton.classList.add("active");
+              languageButton.classList.remove("inactive");
+            } else {
+              languageButton.classList.add("inactive");
+              languageButton.classList.remove("active");
+            }
+            break;
+          default:
+            break;
+        }
+      });
 
       browser.tabs
         .executeScript({
@@ -28,7 +45,18 @@ if (main) {
         })
         .then(() => {});
     } else if (e.target.nodeName === "I") {
-      type = e.target.dataset.type;
+      let type = e.target.dataset.type;
+      let replacedType = type.replace("reset-", "");
+      Array.from(languageButtons).forEach((languageButton) => {
+        switch (languageButton.dataset.type) {
+          case replacedType:
+            languageButton.classList.add("inactive");
+            languageButton.classList.remove("active");
+            break;
+          default:
+            break;
+        }
+      });
 
       browser.tabs
         .executeScript({
@@ -40,7 +68,7 @@ if (main) {
   //#endregion
 
   //#region Set active/inactive classes
-  function setActiveAndInactiveClasses() {
+  function setActiveAndInactiveClasses(givenType) {
     let languageButtons = document.querySelectorAll(
       ".button-container > button"
     );
@@ -62,15 +90,19 @@ if (main) {
           case "interface":
             if (hl === language) {
               languageButton.classList.add("active");
+              languageButton.classList.remove("inactive");
             } else {
               languageButton.classList.add("inactive");
+              languageButton.classList.remove("active");
             }
             break;
           case "specified-language":
             if (lr && lr.replace("lang_", "") === language) {
               languageButton.classList.add("active");
+              languageButton.classList.remove("inactive");
             } else {
               languageButton.classList.add("inactive");
+              languageButton.classList.remove("active");
             }
           default:
             console.error("Unknown type");
@@ -85,4 +117,4 @@ if (main) {
 } else {
   console.error("main is null");
 }
-//#endregion main
+//#endregion
