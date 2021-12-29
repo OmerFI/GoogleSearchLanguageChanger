@@ -68,7 +68,7 @@ if (main) {
   //#endregion
 
   //#region Set active/inactive classes
-  function setActiveAndInactiveClasses(givenType) {
+  function setActiveAndInactiveClasses() {
     let languageButtons = document.querySelectorAll(
       ".button-container > button"
     );
