@@ -1,9 +1,9 @@
 {
-  "description": "Changes Google Search Language",
-  "manifest_version": 2,
-  "name": "GS Language Changer",
-  "version": "1.0",
+  "name": "__MSG_extensionName__",
   "author": "Omer Furkan Isleyen",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "__MSG_extensionDescription__",
 
   "icons": {
     "128": "icons/favicon.ico"
@@ -26,8 +26,10 @@
     "default_popup": "changer.html"
   },
 
-  "permissions": [
-    "<all_urls>",
-    "tabs"
-  ]
+  "permissions": ["<all_urls>", "tabs"],
+
+  "default_locale": "en",
+  "background": {
+    "scripts": ["background.js"]
+  }
 }
