@@ -16,6 +16,13 @@ const getActiveTab = () => {
 //#region Main
 let main = document.querySelector("main");
 if (main) {
+  //#region Set Language Specific Things
+  let elementsToChange = document.querySelectorAll("[data-i18n]");
+  elementsToChange.forEach((element) => {
+    element.textContent = browser.i18n.getMessage(element.dataset.i18n);
+  });
+  //#endregion
+
   //#region Add event listeners
   let languageButtons = document.querySelectorAll(".button-container > button");
   main.addEventListener("click", (e) => {

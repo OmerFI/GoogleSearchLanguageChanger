@@ -1,0 +1,30 @@
+{
+  "extensionName": {
+    "message": "Google Arama Dili Değiştirici",
+    "description": "Extension Name"
+  },
+  "extensionDescription": {
+    "message": "Google Arama Dilini Değiştirir",
+    "description": "Extension Description"
+  },
+  "popupHeaderText": {
+    "message": "Google Arama Dili Değiştirici",
+    "description": "h1 element text which is the title of the extension"
+  },
+  "popupInterfaceLanguageText": {
+    "message": "Web Arayüz Dili:",
+    "description": ""
+  },
+  "popupSpecifiedLanguageText": {
+    "message": "Belirtilen Dildeki Sayfalar:",
+    "description": ""
+  },
+  "popupLanguageButton1Text": {
+    "message": "İngilizce",
+    "description": ""
+  },
+  "popupLanguageButton2Text": {
+    "message": "Türkçe",
+    "description": ""
+  }
+}
