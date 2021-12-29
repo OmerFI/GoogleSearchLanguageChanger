@@ -22,14 +22,11 @@
       "96": "icons/favicon.ico",
       "128": "icons/favicon.ico"
     },
-    "default_title": "GS Language Changer",
+    "default_title": "__MSG_extensionName_",
     "default_popup": "changer.html"
   },
 
   "permissions": ["<all_urls>", "tabs"],
 
-  "default_locale": "en",
-  "background": {
-    "scripts": ["background.js"]
-  }
+  "default_locale": "en"
 }
