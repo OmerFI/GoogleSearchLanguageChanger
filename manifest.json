@@ -18,9 +18,11 @@
 
   "browser_action": {
     "default_icon": {
-      "64": "icons/favicon.ico",
-      "96": "icons/favicon.ico",
-      "128": "icons/favicon.ico"
+      "16": "icons/favicon-16x16.png",
+      "32": "icons/favicon-32x32.png",
+      "48": "icons/favicon.ico",
+      "192": "icons/android-chrome-192x192.png",
+      "512": "icons/android-chrome-512x512.png"
     },
     "default_title": "__MSG_extensionName_",
     "default_popup": "changer.html"
