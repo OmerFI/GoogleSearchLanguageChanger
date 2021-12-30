@@ -24,7 +24,7 @@
       "192": "icons/android-chrome-192x192.png",
       "512": "icons/android-chrome-512x512.png"
     },
-    "default_title": "__MSG_extensionName_",
+    "default_title": "GS Language Changer",
     "default_popup": "changer.html"
   },
 
