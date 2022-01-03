@@ -1,6 +1,6 @@
 # Google Search Language Changer
 
-<img src="icons/Google-Search-Language-Changer-Logo.png" width=256>
+<img src="images/Google-Search-Language-Changer-Logo.png" width=256>
 
 Translations:
 

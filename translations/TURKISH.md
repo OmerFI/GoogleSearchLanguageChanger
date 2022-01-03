@@ -1,6 +1,6 @@
 # Google Arama Dili Değiştirici
 
-<img src="../icons/Google-Search-Language-Changer-Logo.png" width=256>
+<img src="../images/Google-Search-Language-Changer-Logo.png" width=256>
 
 <!-- **Google Search Language Changer** is an extension that allows you to quickly change your Google Search language preferences such as **pages in the specified language** and **web interface language**. -->
 
