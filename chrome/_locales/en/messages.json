@@ -1,0 +1,30 @@
+{
+  "extensionName": {
+    "message": "Google Search Language Changer",
+    "description": "Extension Name"
+  },
+  "extensionDescription": {
+    "message": "Google Search Language Changer is an extension that allows you to quickly change your Google Search language preferences such as pages in the specified language and web interface language.",
+    "description": "Extension Description"
+  },
+  "popupHeaderText": {
+    "message": "Google Search Language Changer",
+    "description": "h1 element text which is the title of the extension"
+  },
+  "popupInterfaceLanguageText": {
+    "message": "Web Interface Language:",
+    "description": ""
+  },
+  "popupSpecifiedLanguageText": {
+    "message": "Pages In Specified Language:",
+    "description": ""
+  },
+  "popupLanguageButton1Text": {
+    "message": "English",
+    "description": ""
+  },
+  "popupLanguageButton2Text": {
+    "message": "Turkish",
+    "description": ""
+  }
+}

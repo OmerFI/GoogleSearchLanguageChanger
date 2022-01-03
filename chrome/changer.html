@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="changer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 data-i18n="popupHeaderText">Google Search Language Changer</h1>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="flex-container">
+          <div class="interface">
+            <p class="content-title" data-i18n="popupInterfaceLanguageText">
+              Web Arayüz Dili:
+            </p>
+            <div class="flex-container-2">
+              <div class="button-container">
+                <button
+                  class="english"
+                  data-type="interface"
+                  data-language="english"
+                  data-i18n="popupLanguageButton1Text"
+                >
+                  English
+                </button>
+                <button
+                  class="turkish"
+                  data-type="interface"
+                  data-language="turkish"
+                  data-i18n="popupLanguageButton2Text"
+                >
+                  Türkçe
+                </button>
+              </div>
+              <i class="fa fa-refresh restart" data-type="reset-interface"></i>
+            </div>
+          </div>
+          <div class="specified-language">
+            <p class="content-title" data-i18n="popupSpecifiedLanguageText">
+              Pages In Specified Language:
+            </p>
+            <div class="flex-container-2">
+              <div class="button-container">
+                <button
+                  class="english"
+                  data-type="specified-language"
+                  data-language="english"
+                  data-i18n="popupLanguageButton1Text"
+                >
+                  English
+                </button>
+                <button
+                  class="turkish"
+                  data-type="specified-language"
+                  data-language="turkish"
+                  data-i18n="popupLanguageButton2Text"
+                >
+                  Türkçe
+                </button>
+              </div>
+
+              <i
+                class="fa fa-refresh restart"
+                data-type="reset-specified-language"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="changer.js"></script>
+  </body>
+</html>

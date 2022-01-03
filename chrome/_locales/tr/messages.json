@@ -1,0 +1,30 @@
+{
+  "extensionName": {
+    "message": "Google Arama Dili Değiştirici",
+    "description": "Extension Name"
+  },
+  "extensionDescription": {
+    "message": "Google Arama Dili Değiştirici hızlı bir şekilde Google arama dili tercihlerinizi değiştirebilmenizi sağlayan bir eklentidir. Örneğin, karşınıza çıkacak sayfaların dilini ve web arayüz dilini değiştirebilmenizi sağlar.",
+    "description": "Extension Description"
+  },
+  "popupHeaderText": {
+    "message": "Google Arama Dili Değiştirici",
+    "description": "h1 element text which is the title of the extension"
+  },
+  "popupInterfaceLanguageText": {
+    "message": "Web Arayüz Dili:",
+    "description": ""
+  },
+  "popupSpecifiedLanguageText": {
+    "message": "Görüntülenecek Sayfaların Dili:",
+    "description": ""
+  },
+  "popupLanguageButton1Text": {
+    "message": "İngilizce",
+    "description": ""
+  },
+  "popupLanguageButton2Text": {
+    "message": "Türkçe",
+    "description": ""
+  }
+}

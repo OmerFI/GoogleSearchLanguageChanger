@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #7f0082;
+  color: #fff;
+  padding: 12px 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* text-align: left; */
+}
+
+/* Trying new things*/
+
+main {
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 10px;
+}
+
+main p,
+main button {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+main p {
+  color: #7f0082;
+}
+
+main .wrapper {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 80px;
+  padding-left: 10px;
+}
+
+main .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .flex-container > div {
+  display: flex;
+}
+
+main .flex-container > div:first-child {
+  margin-bottom: 16px;
+}
+
+main .flex-container > div > * {
+  width: 50%;
+}
+
+main .flex-container > div .content-title {
+  text-align: right;
+  line-height: 23.7px;
+}
+
+main .flex-container-2 {
+  display: flex;
+}
+
+main .flex-container-2 .restart {
+  color: #7f0082;
+  line-height: 23.7px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+main .button-container {
+  margin-left: 22px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+main .button-container button {
+  background: none;
+  border: 2px solid #aa5dab;
+  border-radius: 14px;
+  padding: 1px 9px;
+  line-height: 18.5px;
+  cursor: pointer;
+}
+
+main .button-container button:first-child {
+  margin-right: 5px;
+}
+
+main .button-container button:hover {
+  box-shadow: 0 3px 3px rgba(170, 93, 171, 0.3);
+}
+
+main .button-container button.active {
+  cursor: default;
+  background: rgba(170, 93, 171, 1);
+  color: #fff;
+}
