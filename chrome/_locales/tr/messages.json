@@ -4,7 +4,7 @@
     "description": "Extension Name"
   },
   "extensionDescription": {
-    "message": "Google Arama Dili Değiştirici hızlı bir şekilde Google arama dili tercihlerinizi değiştirebilmenizi sağlayan bir eklentidir. Örneğin, karşınıza çıkacak sayfaların dilini ve web arayüz dilini değiştirebilmenizi sağlar.",
+    "message": "Google Arama Dili Değiştirici hızlı bir şekilde Google arama dili tercihlerinizi değiştirebilmenizi sağlayan bir eklentidir.",
     "description": "Extension Description"
   },
   "popupHeaderText": {
