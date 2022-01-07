@@ -33,7 +33,7 @@
     "default_popup": "changer.html"
   },
 
-  "permissions": ["<all_urls>", "tabs"],
+  "permissions": ["*://google.com/*", "*://*.google.com/*", "tabs"],
 
   "default_locale": "en"
 }
