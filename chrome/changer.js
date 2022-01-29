@@ -25,7 +25,7 @@ if (main) {
 
   //#region Add event listeners
   let languageButtons = document.querySelectorAll(".button-container > button");
-  main.addEventListener("click", (e) => {
+  main.addEventListener("click", async (e) => {
     if (e.target.nodeName === "BUTTON") {
       type = e.target.dataset.type;
       language = e.target.dataset.language;
@@ -46,8 +46,23 @@ if (main) {
         }
       });
 
-      chrome.tabs.executeScript({
-        code: `update(type="${type}", lang="${language}")`,
+      // https://developer.chrome.com/docs/extensions/mv3/intro/mv3-migration/#executing-arbitrary-strings
+      async function getCurrentTab() {
+        let queryOptions = { active: true, currentWindow: true };
+        let [tab] = await chrome.tabs.query(queryOptions);
+        return tab;
+      }
+      let tab = await getCurrentTab();
+
+      function doUpdate(givenType, givenLanguage) {
+        update((type = `${givenType}`), (lang = `${givenLanguage}`));
+      }
+
+      chrome.scripting.executeScript({
+        // code: `update(type="${type}", lang="${language}")`,
+        target: { tabId: tab.id },
+        func: doUpdate,
+        args: [type, language],
       });
     } else if (e.target.nodeName === "I") {
       let type = e.target.dataset.type;
@@ -63,8 +78,23 @@ if (main) {
         }
       });
 
-      chrome.tabs.executeScript({
-        code: `update(type="${type}")`,
+      // https://developer.chrome.com/docs/extensions/mv3/intro/mv3-migration/#executing-arbitrary-strings
+      async function getCurrentTab() {
+        let queryOptions = { active: true, currentWindow: true };
+        let [tab] = await chrome.tabs.query(queryOptions);
+        return tab;
+      }
+      let tab = await getCurrentTab();
+
+      function doUpdate(givenType) {
+        update((type = `${givenType}`));
+      }
+
+      chrome.scripting.executeScript({
+        // code: `update(type="${type}")`,
+        target: { tabId: tab.id },
+        func: doUpdate,
+        args: [type],
       });
     }
   });
