@@ -6,11 +6,11 @@
   "description": "__MSG_extensionDescription__",
   "homepage_url": "https://github.com/OmerFI/GoogleSearchLanguageChanger",
   "icons": {
-    "16": "icons/favicon-16x16.png",
-    "32": "icons/favicon-32x32.png",
-    "48": "icons/favicon.ico",
-    "192": "icons/android-chrome-192x192.png",
-    "512": "icons/android-chrome-512x512.png"
+    "16": "icons/favicon-16x16-BGWhite.png",
+    "32": "icons/favicon-32x32-BGWhite.png",
+    "48": "icons/favicon-BGWhite.ico",
+    "192": "icons/android-chrome-192x192-BGWhite.png",
+    "512": "icons/android-chrome-512x512-BGWhite.png"
   },
   "content_scripts": [
     {
@@ -24,11 +24,11 @@
   ],
   "action": {
     "default_icon": {
-      "16": "icons/favicon-16x16.png",
-      "32": "icons/favicon-32x32.png",
-      "48": "icons/favicon.ico",
-      "192": "icons/android-chrome-192x192.png",
-      "512": "icons/android-chrome-512x512.png"
+      "16": "icons/favicon-16x16-BGWhite.png",
+      "32": "icons/favicon-32x32-BGWhite.png",
+      "48": "icons/favicon-BGWhite.ico",
+      "192": "icons/android-chrome-192x192-BGWhite.png",
+      "512": "icons/android-chrome-512x512-BGWhite.png"
     },
     "default_title": "Google Search Language Changer",
     "default_popup": "changer.html"
